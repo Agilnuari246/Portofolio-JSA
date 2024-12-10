@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita - Jurnalist Student of Ardiyasa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/Logojsa.png" alt="Logo" class="logo" />
+          </a>
+          <h1>Portofolio JSA</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Kepengurusan</a>
+            <div class="dropdown-content">
+              <a href="pembina.html">Pembina</a>
+              <a href="BPH.html">BPH</a>
+              <a href="anggota.html">Anggota</a>
+            </div>
+          </li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="news.html">Berita</a></li>
+          <li><a href="activities.html">Kegiatan</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="news" class="news">
+      <h2 data-aos="fade-up">Berita Terbaru</h2>
+
+      <!-- News Item 1 -->
+      <div class="news-item" data-aos="fade-right">
+        <img src="images/kegiatan1.jpg" alt="Workshop Jurnalistik" />
+        <div class="news-content">
+          <h3>Kegiatan Sosialisasi Konsumen Cerdas</h3>
+          <p>
+            SMAN 1 Parigi merupakan salah satu sekolah di Kabupaten Pangandaran
+            yang dikunjungi oleh Ibu Pejabat Gubernur @amanda.soemedi. Ini
+            merupakan suatu kebanggaan luar biasa bagi warga sekolah, yang
+            diberi kesempatan untuk berbagi ilmu dan kebahagiaan bersama beliau.
+            Kegiatan tersebut adalah Sosialisasi Konsumen Cerdas yang
+            diselenggarakan oleh Dinas Perindustrian dan Perdagangan Provinsi
+            Jawa Barat. Konsumen cerdas adalah konsumen yang memahami hak dan
+            kewajibannya, serta kritis dalam mengevaluasi informasi yang
+            diterima.
+          </p>
+          <video controls class="news-video">
+            <source src="videos/kegiatan1.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung elemen video.
+          </video>
+        </div>
+      </div>
+
+      <!-- News Item 2 -->
+      <div class="news-item" data-aos="fade-left">
+        <img
+          src="images/milangkala (1).jpg"
+          alt="Penghargaan Karya Jurnalistik"
+        />
+        <div class="news-content">
+          <h3>Milangkala SMAN 1 PARIGI</h3>
+          <p>
+            Happy 43rd birthday to SMAN 1 PARIGI, hopefully it can become a
+            school that is more accomplished and superior
+          </p>
+          <video controls class="news-video">
+            <source src="videos/penghargaan.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung elemen video.
+          </video>
+        </div>
+      </div>
+
+      <!-- Gallery Section -->
+      <div class="gallery" data-aos="fade-up">
+        <h3>Galeri Kegiatan</h3>
+        <div class="gallery-images">
+          <img
+            src="images/milangkala (2).jpg"
+            alt="Gallery Image 1"
+            class="gallery-img"
+          />
+          <img src="images/bg2.jpg" alt="Gallery Image 2" class="gallery-img" />
+          <img src="images/bg1.jpg" alt="Gallery Image 3" class="gallery-img" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
