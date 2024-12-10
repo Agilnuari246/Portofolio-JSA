@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPH - Jurnalist Student of Ardiyasa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      /* Navbar Styling */
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header .logo img {
+        max-width: 50px;
+        margin-right: 10px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        background-color: #34495e;
+        padding: 10px 0;
+        margin-top: 10px;
+      }
+
+      nav .nav-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav .nav-links li {
+        margin: 0 15px;
+        position: relative;
+      }
+
+      nav .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+
+      nav .nav-links a:hover {
+        color: #e74c3c;
+      }
+
+      /* Dropdown Styling */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #34495e;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #e74c3c;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* BPH Section Styling */
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      .bph-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .bph-header h2 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .bph-header p {
+        font-size: 1.1rem;
+        color: #777;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      /* BPH Member Styling */
+      .team {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        justify-items: center;
+      }
+
+      .team-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .team-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .team-card img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .team-card h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #2c3e50;
+      }
+
+      .team-card p {
+        margin: 5px 0;
+        color: #777;
+        font-size: 1rem;
+      }
+
+      .team-card .social-icons a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #2c3e50;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .team-card .social-icons a:hover {
+        color: #e74c3c;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #34495e;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Logojsa.png" alt="Logo" class="logo" />
+        </a>
+        <h1>Portofolio JSA</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Kepengurusan</a>
+            <div class="dropdown-content">
+              <a href="pembina.html">Pembina</a>
+              <a href="bph.html">BPH</a>
+              <a href="anggota.html">Anggota</a>
+            </div>
+          </li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="news.html">Berita</a></li>
+          <li><a href="activities.html">Kegiatan</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BPH Section -->
+    <div class="container">
+      <div class="bph-header">
+        <h2>Badan Pengurus Harian (BPH)</h2>
+        <p>
+          Berikut adalah anggota Badan Pengurus Harian yang memimpin Jurnalist
+          Student of Ardiyasa. Merekalah yang mengatur kegiatan dan kebijakan
+          organisasi kami.
+        </p>
+      </div>
+
+      <div class="team">
+        <!-- Ketua -->
+        <div class="team-card">
+          <img src="images/ketua.jpg" alt="Ketua JSA" />
+          <h3>Ketua JSA</h3>
+          <p>Nama Ketua</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Wakil Ketua -->
+        <div class="team-card">
+          <img src="images/wakil_ketua.jpg" alt="Wakil Ketua JSA" />
+          <h3>Wakil Ketua JSA</h3>
+          <p>Nama Wakil Ketua</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Sekretaris -->
+        <div class="team-card">
+          <img src="images/sekretaris.jpg" alt="Sekretaris JSA" />
+          <h3>Sekretaris JSA</h3>
+          <p>Nama Sekretaris</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Wakil Sekretaris -->
+        <div class="team-card">
+          <img src="images/wakil_sekretaris.jpg" alt="Wakil Sekretaris JSA" />
+          <h3>Wakil Sekretaris JSA</h3>
+          <p>Nama Wakil Sekretaris</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Bendahara -->
+        <div class="team-card">
+          <img src="images/bendahara.jpg" alt="Bendahara JSA" />
+          <h3>Bendahara JSA</h3>
+          <p>Nama Bendahara</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Wakil Bendahara -->
+        <div class="team-card">
+          <img src="images/wakil_bendahara.jpg" alt="Wakil Bendahara JSA" />
+          <h3>Wakil Bendahara JSA</h3>
+          <p>Nama Wakil Bendahara</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Jurnalist Student of Ardiyasa. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdown = document.querySelector(".dropdown");
+        const dropdownContent = dropdown.querySelector(".dropdown-content");
+
+        dropdown.addEventListener("click", function () {
+          dropdownContent.style.display =
+            dropdownContent.style.display === "block" ? "none" : "block";
+        });
+
+        document.addEventListener("click", function (e) {
+          if (!dropdown.contains(e.target)) {
+            dropdownContent.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

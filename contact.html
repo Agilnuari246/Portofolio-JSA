@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Jurnalist Student of Ardiyasa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/Logojsa.png" alt="Logo" class="logo" />
+          </a>
+          <h1>Portofolio JSA</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Kepengurusan</a>
+            <div class="dropdown-content">
+              <a href="pembina.html">Pembina</a>
+              <a href="BPH.html">BPH</a>
+              <a href="anggota.html">Anggota</a>
+            </div>
+          </li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="news.html">Berita</a></li>
+          <li><a href="activities.html">Kegiatan</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Kontak Kami</h2>
+          <p>
+            Jika Anda memiliki pertanyaan atau ingin bekerja sama, kirimkan
+            pesan kepada kami. Kami siap membantu Anda.
+          </p>
+          <div class="contact-details">
+            <p><strong>Email:</strong> agilnuari2005@gmail.com</p>
+            <p><strong>Telepon:</strong> 0123456789</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form
+            action="https://formspree.io/f/xzzbqrel"
+            method="POST"
+            class="form"
+          >
+            <p><b>Berikan Masukan</b></p>
+            <input
+              type="text"
+              name="name"
+              placeholder="Nama Lengkap"
+              required
+              class="form-input"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              class="form-input"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Pesan Anda"
+              required
+              class="form-input"
+            ></textarea>
+            <button type="submit" class="form-submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

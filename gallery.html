@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri - Jurnalist Student of Ardiyasa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/Logojsa.png" alt="Logo" class="logo" />
+          </a>
+          <h1>Portofolio JSA</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Anggota</a>
+            <div class="dropdown-content">
+              <a href="pembina.html">Pembina</a>
+              <a href="BPH.html">BPH</a>
+              <a href="anggota.html">Anggota</a>
+            </div>
+          </li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="news.html">Berita</a></li>
+          <li><a href="activities.html">Kegiatan</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- konten mulainya dari  -->
+    <section id="gallery" class="gallery">
+      <h2>Galeri Foto dan Video</h2>
+      <div class="gallery-images">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+          <img src="images/bulan_bahasa2.jpg" alt="Workshop Jurnalistik" />
+          <div class="overlay">
+            <div class="text">Bulan Bahasa</div>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery-item">
+          <img
+            src="images/bulan_bahasa3.jpg"
+            alt="Penghargaan Karya Jurnalistik"
+          />
+          <div class="overlay">
+            <div class="text">Bulan Bahasa</div>
+          </div>
+        </div>
+
+        <!-- Video -->
+        <div class="gallery-item">
+          <video controls>
+            <source src="videos/outreach.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">
+            <div class="text">Proker 3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

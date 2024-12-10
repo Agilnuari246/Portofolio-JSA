@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bergabung dengan JSA - Coming Soon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      /* Reset and basic styling */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .container {
+        text-align: center;
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        animation: zoomIn 1.5s ease-in-out;
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        animation: bounceIn 1s ease-out;
+      }
+
+      @keyframes bounceIn {
+        0% {
+          transform: translateY(-300px);
+        }
+        60% {
+          transform: translateY(30px);
+        }
+        80% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        animation: fadeUp 1s ease-out;
+      }
+
+      @keyframes fadeUp {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .cta-btn {
+        background-color: #ff6f61;
+        padding: 15px 30px;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 50px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background-color: #ff3d2d;
+        animation: shake 0.5s ease-in-out;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-10px);
+        }
+        50% {
+          transform: translateX(10px);
+        }
+        75% {
+          transform: translateX(-10px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .coming-soon {
+        font-size: 1.5em;
+        margin-top: 20px;
+        animation: pulse 1.5s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 0.8;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.8;
+        }
+      }
+
+      footer {
+        margin-top: 40px;
+        font-size: 1em;
+        color: #fff;
+      }
+
+      footer a {
+        color: #ff6f61;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container for Join Section -->
+    <div class="container">
+      <h1>Bergabung dengan JSA</h1>
+      <h2>Pendaftaran Belum Dibuka</h2>
+      <p class="coming-soon">Coming Soon...</p>
+      <p>
+        Kami akan segera membuka pendaftaran untuk bergabung dengan Jurnalist
+        Student of Ardiyasa. Pantau terus dan siapkan dirimu untuk menjadi
+        bagian dari organisasi jurnalistik.
+      </p>
+      <a href="index.html" class="cta-btn">Kembali ke Beranda</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Jurnalist Student of Ardiyasa</p>
+      <p>
+        Ikuti kami di{' '}
+        <a href="https://www.instagram.com/jurnalis.ardiyasa" target="_blank"
+          >Instagram</a
+        >
+        {' '} untuk informasi lebih lanjut.
+      </p>
+    </footer>
+  </body>
+</html>
